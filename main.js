@@ -18,5 +18,28 @@ const grade = () => {
     const Additional_Class2 = document.getElementById('Additional Class').value;
     const Additional_Class2Num = parseFloat(Additional_Class2);
     
+    let result = "";
+
+    let total = MathNum + ScienceNum + HistoryNum + EnglishNum + LanguageNum + Physical_EducationNum + Additional_ClassNum + Additional_Class2Num;
+
+if (Math == 0 || Science == 0 || History == 0 || English == 0 || Language == 0 || Physical_Education == 0 || Additional_Class == 0 || Additional_Class2 == 0 ||) {
+    alert('Enter Grade');
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
 
