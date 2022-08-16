@@ -6,3 +6,14 @@ box-sizing: border-box;
 text-transform: capatalize;
 font-family: 'Cinzel', serif;
 }
+body{
+display: grid;
+place-content: center;
+min-height: 100vh;
+}
+.container{
+    background-color: #FFFFFF
+    width 700px;
+    height: 400px;
+    box-shadow: 0px 10px 0px 
+}
