@@ -33,13 +33,5 @@ if (Math == 0 || Science == 0 || History == 0 || English == 0 || Language == 0 |
 
 
 
-
-
-
-
-
-
 }
-
-
 
