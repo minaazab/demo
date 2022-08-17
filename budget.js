@@ -1,23 +1,31 @@
 // elements
-let budget = document.getElementById('budget').value;
+let budget = document.getElementById('budget');
 let entertainmentoutput = document.getElementById('entertainmentoutput');
 let savingsoutput = document.getElementById('savingsoutput');
 let foodoutput = document.getElementById('foodoutput');
-let button = document.getElementById('budgetme');
-button.addEventListener("click", budgeter());
 
-// mathematics
+
+
+
+
+// calling the math to print
 function budgeter(event) {
-    event.preventDefault();
-    let entertainmentbudget = budget * 0.20;
-    let savingsbudget = budget * 0.60;
-    let foodbudget = budget * 0.20;
-    entertainmentoutput.innterHTML = 'You should spend $ ${entertainmentbudget}, on your form of entertainment!';
-    savingsoutput.innerHTML = "You should save " + "$" + entertainmentbudget + "!";
+    if (budget.value.length == ""){
+        alert("Please enter a budget!");
+    }
+    else{
+    // mathematics
+    let entertainmentbudget = parseFloat(budget.value) * 0.20;
+    let savingsbudget = parseFloat(budget.value) * 0.60;
+    let foodbudget = parseFloat(budget.value) * 0.20;
+    entertainmentoutput.innerHTML = "You should spend $" + entertainmentbudget + " on your form of entertainment!";
+    savingsoutput.innerHTML = "You should save " + "$" + savingsbudget + "!";
     foodoutput.innerHTML = "You should spend " + "$" + foodbudget + " on your food!";
+    // event.preventDefault();
+    }
 }
 
 // printing
-if (budget.length == ""){
-    alert("Please enter a budget!");
-}
+// if (budget.length == ""){
+//     alert("Please enter a budget!");
+// }
