@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Budgeting Calculator</title>
+  <title>Calculator Haven</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="description" content="" />
+  <link rel="stylesheet" href="style.css">
   <script src="budget.js" defer></script>
 </head>
+
 <body>
   <h1>Budget Calculator</h1>
+  <div class="navigation_bar">
+    <a href="intro.html"><img id="nav" src="Gradecalculator.jpg"></a>
+    <a id="nav" href="intro.html">Home</a>
+    <a id="nav" href="grade.html">Grade Calculator</a>
+    <a id="nav" href="budget.html">Budget Calculator</a>
+  </div>
   <form>
-    <label for="budget">How much money do you currently have?:</label>
-    <input type="text" id="budget" name="budget"><br>
+    <label for="budgeting">How much money do you currently have?</label>
+    <input title="budget" type="text" id="budget" name="budgetinput"><br>
   </form>
-  <button id="budgetme">Budget Me!</button>
+  <button onclick="budgeter()">Budget Me!</button>
   <p id="entertainmentoutput"></p>
   <p id="savingsoutput"></p>
   <p id="foodoutput"></p>
