@@ -1,42 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator Haven</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="grade.js" defer></script>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Calculator Haven</title>
+   <link rel="stylesheet" href="style.css">
+   <script src="grade.js" defer></script>
 </head>
-
-
-<body> 
-    <h1>Grade Calculator</h1>
-    <div class="navigation_bar">
-        <a href="intro.html"><img id="nav" src="Gradecalculator.jpg"></a>
-        <a id="nav" href="intro.html">Home</a>
-        <a id="nav" href="grade.html">Grade Calculator</a>
-        <a id="nav" href="budget.html">Budget Calculator</a>
-    </div>
-
-    <div class="container">
-        <h1>Result</h1>
-        <div class="p-g-w">
-            <h2>Percentage - <span class="per"></span></h2>
-            <h2>Grade (letter) - <span class="gra"></span></h2>
-            <h2>Weight - <span class="wei"></span></h2>
-        </div>
-    </div>
-    <div class="content">
-        <input type="number" id="math" placeholder="Algebra"/>
-        <input type="number" id="science" placeholder="Physics"/>
-        <input type="number" id="history" placeholder="Global History"/>
-        <input type="number" id="english" placeholder="English"/>
-        <input type="number" id="pe" placeholder="Physical Education"/>
-        <input type="number" id="add" placeholder="Music"/>
-        <input type="number" id="add_2" placeholder="Statistics"/>
-        <button type="button">show result</button>
-    </div>
+ 
+ 
+<body>
+   <h1>Grade Calculator</h1>
+   <div class="navigation_bar">
+       <a href="intro.html"><img id="nav" src="Gradecalculator.jpg"></a>
+       <a id="nav" href="intro.html">Home</a>
+       <a id="nav" href="grade.html">Grade Calculator</a>
+       <a id="nav" href="budget.html">Budget Calculator</a>
+   </div>
+ 
+   <div class="container">
+       <h1>Result</h1>
+       <div class="p-g-w">
+           <h2>Percentage - <span id="per"></span></h2>
+           <h2>Grade (letter) - <span id="gra"></span></h2>
+       </div>
+   </div>
+   <div class="content">
+       <input type="number" id="math" placeholder="Algebra"/>
+       <input type="number" id="science" placeholder="Physics"/>
+       <input type="number" id="history" placeholder="Global History"/>
+       <input type="number" id="english" placeholder="English"/>
+       <input type="number" id="pe" placeholder="Physical Education"/>
+       <input type="number" id="add" placeholder="Music"/>
+       <input type="number" id="add_2" placeholder="Statistics"/>
+       <button type="button" id="button">show result</button>
+       <div id="Result"></div>
+   </div>
 </body>
-
+ 
 </html>
